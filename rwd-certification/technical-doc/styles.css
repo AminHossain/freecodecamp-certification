@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    min-width: 300px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #0000;
+}
+
+#navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: thin;
+}
+
+#main-doc header {
+    text-align: center;
+    margin: 0;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 320px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+section article {
+    margin: 15px;
+    font-size: 1rem;
+}
+
+section li {
+    margin: 15px 0 0 20px;
+}
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    text-align: left;
+    position: relative;
+    line-height: 1.5;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #navbar ul {
+        border: 1px solid;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+       margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 40px;
+        min-width: 230px;
+    }
+}
+
